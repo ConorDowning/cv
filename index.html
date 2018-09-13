@@ -242,7 +242,6 @@
 <script>
     function cv_print(elm) {
         if (elm.disabled) return;
-
         var org = elm.innerText;
         window.onafterprint = function () {
             window.onafterprint = null;
@@ -251,24 +250,18 @@
         };
         elm.innerText = "Printing...";
         elm.disabled = true;
-
         window.print();
     }
-
     function cv_pdf(elm) {
         if (elm.disabled) return;
-
         var org = elm.innerText;
         elm.innerText = "Downloading...";
         elm.disabled = true;
-
         var self = this;
         self.req = new XMLHttpRequest();
-
         var url = "https://api.html2pdfrocket.com/pdf";
         var apiKey = "3eca64fb-b7e8-4cf0-8617-dcc9e94c2a9e";
         var data = "apikey=" + apiKey + "&value=" + encodeURIComponent(window.location.href) + "&FileName=" + encodeURIComponent(document.title.replace(/\s/g, '_')) + "&UsePrintStylesheet=true";
-
         self.req.onload = function(event) {
             var link = document.createElement('a');
             var blobUrl = window.URL.createObjectURL(self.req.response);
@@ -276,15 +269,12 @@
             link.download = document.title + '.pdf';
             link.dispatchEvent(new MouseEvent('click'));
             window.URL.revokeObjectURL(blobUrl);
-
             elm.innerText = org;
             elm.disabled = false;
         };
-
         self.req.open("POST", url, true);
         self.req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         self.req.responseType = "blob";
-
         self.req.send(data);
     }
 </script>
