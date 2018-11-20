@@ -896,7 +896,7 @@ body {
   margin: 0; }
 
 h1, h2, h3, h4 {
-  color: #4a89dc;
+  color: #41c4f4;
   font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 300; }
 
@@ -917,7 +917,7 @@ h4 {
   font-weight: 400; }
 
 blockquote {
-  border-left: 2px solid #4a89dc;
+  border-left: 2px solid #41c4f4;
   font-style: italic;
   margin: 10px 0;
   padding-left: 20px; }
