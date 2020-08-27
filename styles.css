@@ -624,8 +624,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  background-color: #f1f350;
+  border-color: #f1f350; }
 
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -638,8 +638,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  background-color: #f1f350;
+  border-color: #f1f350; }
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -688,7 +688,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #f1f350;
   outline: 0; }
 
 label,
@@ -818,7 +818,7 @@ hr {
   clear: both; }
 
 .highlight {
-  color: #42f47d; }
+  color: #f1f350; }
   .highlight.bold {
     font-weight: bold; }
 
@@ -882,12 +882,12 @@ hr {
     font: 16px 'Lato', Arial, sans-serif;
     margin: 0;
     display: block;
-    background: #37bc9b;
+    background: #f1f350;
     line-height: 35px;
     padding: 0 15px;
     box-sizing: border-box; }
   .cta:hover {
-    background: #2b957a; }
+    background: #bf50f3; }
 
 
 body {
@@ -896,7 +896,7 @@ body {
   margin: 0; }
 
 h1, h2, h3, h4 {
-  color: #41c4f4;
+  color: #bf50f3;
   font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 300; }
 
@@ -917,7 +917,7 @@ h4 {
   font-weight: 400; }
 
 blockquote {
-  border-left: 2px solid #41c4f4;
+  border-left: 2px solid #bf50f3;
   font-style: italic;
   margin: 10px 0;
   padding-left: 20px; }
@@ -932,7 +932,7 @@ blockquote, p, a, li {
 a {
   color: #e4e3e8; }
   a:hover, a:focus {
-    color: #4a89dc;
+    color: #bf50f3;
     outline: none; }
 
 ul {
@@ -940,7 +940,7 @@ ul {
   margin: 0;
   padding: 0; }
   ul li::before {
-    color: #4a89dc;
+    color: #bf50f3;
     content: '• ';
     font-size: 20px;
     padding-right: 8px; }
@@ -952,7 +952,7 @@ ul {
   .left .details .occupation {
     text-transform: uppercase;
     margin-top: 5px;
-    color: #75a5e4;
+    color: #dbdf1b;
     font-size: 14px;
     letter-spacing: 2px;
     padding-left: 7px; }
@@ -1036,7 +1036,7 @@ ul {
         padding: 0 20px;
         text-decoration: none; }
         .main .menu .nav li a:hover {
-          color: #658dc1; }
+          color: #bf50f3; }
   .main .block {
     margin: 25px 30px; }
     .main .block .item {
@@ -1111,61 +1111,3 @@ ul {
 
   .contact .cta {
     display: none; } }
-
-/*# sourceMappingURL=styles.css.map */
-/* Popup container - can be anything you want */
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* The actual popup */
-.popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-}
